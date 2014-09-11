@@ -1,0 +1,72 @@
+"systemMessages": {
+
+		"battleResults": {
+			"winPattern": {
+				"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultWin.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+				"noBattleData": {
+					"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achievements}}",
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultWin.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+
+			"defeatPattern": {
+				"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDefeat.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+				"noBattleData": {
+					"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achievements}}",
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDefeat.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+
+			"drawPattern": {
+				"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:xp}}{{UM:credits}}{{UM:achievements}}",
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDraft.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+				"noBattleData": {
+					"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achievements}}",
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDraft.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+			
+			"macrosFormatter": {
+				"dailyXPFactor": "<font color='#D3D3D3' size='12'>(x{{val}})</font>",
+				"creditsPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+				"creditsCompensation": "компенсация за урон от союзников: <font color='#D3D3D3'>{{val}}</font>",			
+				"xpPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+				"achievements": {
+					"pattern": " • {{localName}}",
+					"separator": "\n",
+					"result": "<font color='#D3D3D3'>Награды и Достижения:</font>\n<font color='#D5C100' size='13'>{{pattern}}</font>"
+				}
+			},
+
+			"buttons": {
+				"label": "Подробнее",
+				"type": "black",
+				"width": 122
+		},
+		
+		"userMacros": {
+			"UM:win": "<font color='#46B700' size='18'>Победа!</font>\n",
+			"UM:defeat": "<font color='#C40900' size='18'>Поражение!</font>\n",
+			"UM:draw": "<font color='#D86704' size='18'>Ничья!</font>\n",
+			"UM:map": "Карта: <font color='#D3D3D3' size='15'><b>{{Map}}</b></font>\n",
+			"UM:vehicle": "Техника: <font color='#D3D3D3' size='15'><b>{{VehicleLocalNameShort}}</b></font>\n",
+			"UM:achievements": "\n\n{{Achievements}}",
+			"UM:xp": "Итого: <font color='{{c:XP}}' size='15'><b>{{XP}}</b></font>{{DailyXPFactor}}<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3'> <font size='15' color='#FE7903'><b>{{FreeXP}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/freexp.png' width='14' height='14' vspace='-3'>",
+			"UM:xp2": "Итого: <font color='{{c:XP}}' size='15'><b>{{XP}}</b></font>{{DailyXPFactor}}<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3'>",
+			"UM:credits": "<font color='{{c:PureCredits}}' size='15'><b> {{PureCredits}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/credits.png' width='16' height='14' vspace='-1'>",
+			"UM:credits2": "<font color='#93EF71' size='15'><b> {{Credits}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/credits.png' width='16' height='14' vspace='-1'>"
+			},
+		"colors": {	
+			"XP": 					[{"value": 200,  "color": "#FE0E00"}, {"value": 400,  "color": "#FE7903"}, {"value": 800, "color": "#F8F400"}, {"value": 1300, "color": "#60FF00"}, {"value": 2201, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+			"PureCredits":			[{"value": 0,	 "color": "#FF5D23"}, {"value": 9999999, "color": "#93EF71"}]
+			}
+		}
+	}

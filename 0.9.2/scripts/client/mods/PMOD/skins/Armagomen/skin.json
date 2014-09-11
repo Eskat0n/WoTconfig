@@ -1,0 +1,37 @@
+/**
+* Обложка для PMOD 0.9.2 #10
+* Модуль: Сессионная статистика и сообщения.
+* Автор: Armagomen
+* Версия: 1.2.6 full+mini.
+* Ccылки для обновления.
+*  http://goo.gl/7upRCf
+*  http://goo.gl/jJ95F5
+*
+* Full версия скина включена по умолчанию. 
+* Чтобы переключится на мини или комбинировать варианты необходимо Снять/Поставить комментарии строк //.
+*
+*	РЕДАКТИРОВАТЬ ТОЛЬКО NOTEPAD++ http://notepad-plus-plus.org
+*	
+*	ПРИМЕР:
+*
+*		${"PMOD/skins/Armagomen/full/battleChat.json"}, 		// Эту строку пропускаем она общяя для обеих вариантов
+*--------------------Сессионная статистика-------------------
+* //	${"PMOD/skins/Armagomen/full/sessionStatistic.json"},
+*		${"PMOD/skins/Armagomen/mini/sessionStatistic.json"},
+*-----------------Сообщения в системном канале---------------
+*		${"PMOD/skins/Armagomen/full/systemMessages.json"}
+* //	${"PMOD/skins/Armagomen/mini/systemMessages.json"}
+*
+* По этой схеме будет использоватся версия Full с Сессионной статистикой от Mini
+*
+* P/S - это был пример редактировать ниже...
+*/
+
+
+	${"PMOD/skins/Armagomen/full/battleChat.json"},					// Сообщения в чат о завершении боя, общие для обеих вариантов.
+/**-------------Сессионная статистика-------------------*/
+	${"PMOD/skins/Armagomen/full/sessionStatistic.json"},			// Сессионная статистика версия FULL
+//	${"PMOD/skins/Armagomen/mini/sessionStatistic.json"},			// Сессионная статистика версия MINI
+/**----------Сообщения в системном канале---------------*/
+	${"PMOD/skins/Armagomen/full/systemMessages.json"}				// Сообщения в системном канале + pop-up FULL
+//	${"PMOD/skins/Armagomen/mini/systemMessages.json"}				// Сообщения в системном канале + pop-up MINI

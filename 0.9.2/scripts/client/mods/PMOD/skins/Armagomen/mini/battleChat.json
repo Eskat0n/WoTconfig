@@ -1,0 +1,7 @@
+"battleChat": {
+		"resultInformer": {
+			"resultWin": "<font color='#FFFFFF'>Танк:</font> <font color='#0082E0'>{{VehicleLocalNameShort}}</font> <font color='#FFFFFF'>Карта:</font> <font color='#0082E0'>{{Map}}</font>  <font color='#00FF00'>ПОБЕДА !!!</font>",
+			"resultDraw": "<font color='#FFFFFF'>Танк:</font> <font color='#0082E0'>{{VehicleLocalNameShort}}</font> <font color='#FFFFFF'>Карта:</font> <font color='#0082E0'>{{Map}}</font>  <font color='#FFA500'>НИЧЬЯ !!!</font>",
+			"resultDefeat": "<font color='#FFFFFF'>Танк:</font> <font color='#0082E0'>{{VehicleLocalNameShort}}</font> <font color='#FFFFFF'>Карта:</font> <font color='#0082E0'>{{Map}}</font>  <font color='#FF0000'>СЛИВ !!!</font>"
+		}
+	}

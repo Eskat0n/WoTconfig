@@ -1,0 +1,466 @@
+/*
+	
+	Главный конфигурационный файл.
+	
+	Синтаксис конфига JSON http://goo.gl/zUTTCX
+	// - комментирование строки
+	Подключение файлов с помощью ссылок:
+	${"путь_к_файлу"}
+	
+	Кодировка файл должна оставаться всегда UTF-8.
+	Для редактирования используйте Notepad++ http://goo.gl/6MeL2D
+	В случае блокнота Windows: Сохранить как -> Кодировка: UTF-8.
+	
+	Большинство настроек внешнего вида некоторых модулей/функций вынесены в файл скина.
+	Для более детального ознакомления откройте файл PMOD/skins/skinLoader.json
+	
+	
+	
+	The main configuration file.
+	
+	Syntax config JSON http://goo.gl/ekFb3H
+	// - сomment line
+	Connection files using links:
+	${"file_path"}
+	
+	Encoding file must remain always UTF-8.
+	To modify, use Notepad++ http://goo.gl/6MeL2D
+	In the case of notebook Windows: Save As -> Encoding: UTF-8.
+	
+	Most of the appearance settings of certain modules/functions delivered in the skin file. 
+	For more detailed information, open the file PMOD/skins/skinLoader.json
+	
+*/
+
+{
+
+	// Игровой чат в бою.
+	// Ingame chat in battle.
+	"battleChat": {
+
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Фильтр игрового чата.
+		// Ingame chat filter.
+		"cleaner": {
+			
+			// true - включить функцию.
+			// true - enable function.
+			"enable": false,
+			
+			// Список предложений по которым удаляются сообщения.
+			// List of proposals which deletes the message.
+			"mask": ["Я в свете!", "Не мешай стрелять"]
+		},
+		
+		// Информер результатов о завершенном бое в чат. *Большинство настроек находятся в файле скина
+		// Informer results of completed battle to chat. *Most of the settings are in the skin file
+		"resultInformer": {
+			
+			// true - включить функцию.
+			// true - enable function.
+			"enable": false
+		}
+	},
+
+	// Изменение поведения интерфейса в бою.
+	// Changing of the interface in battle.
+	"battleGui": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Состояние панели игроков (ушей) при отсчете до начала боя.
+		// Возможные значения - none (скрыть), short (короткая), medium (средняя), medium2 (средняя 2), large (длинная).
+		// Если используете XVM измените параметр "startMode" в файле "playersPanel.xc"
+		// Players panel state when counting up the fight.
+		// Possible values ​​- noen, short, medium, medium2, large.
+		// If you use XVM change the setting "startMode" in the file "playersPanel.xc"
+		"playersPanelState": "large",
+		
+		// Продолжительность отображения индикатора засвета (лампочка) в секундах.
+		// Duration displaying light indicator (lamp) in seconds.
+		"sixthSenseDuration": 5.0
+	},
+	
+	// Информация об вашем респауне на экране загрузки.
+	// Information about your spawn on the loading screen.
+	"battleLoading": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Текстовые подстановки с информацией о местоположении вашей базы.
+		// Text substitution with information about the location of your base.
+		"baseTop": "База с верхней стороны.",
+		"baseBottom": "База с нижней стороны.",
+		"baseLeft": "База с левой стороны.",
+		"baseRight": "База с правой стороны."
+	},
+	
+	// Настройки камеры во время боя.
+	// Camera opption during battle.
+	"cameraOptions": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Инерция камеры (появилась в 0.8.11).
+		// Сamera inertia (introduced in 0.8.11).
+		"noGlideCamera": false,
+		
+		// Красная вспышка когда враг попадает по вам.
+		// Red flash when enemy hit your tank.
+		"noFlashBang": false,
+		
+		// Тряска камеры когда враг попадает по вам.
+		// Shake of camera when enemy hit your tank.
+		"noShockWave": false,
+		
+		// Время слежение камеры за тем кто вас убил (Если он в засвете, и галка стоит в настройках клиента)
+		// Time of camera tracking for those who killed you (If it is spotted, and the jackdaw client is configured)
+		"killerVisionTime": 3.0,
+		
+		// Смещением камеры по оси у (высота) относительно геометрического центра модели танка.
+		// Displacement camera on the y-axis (height) relative to the geometric center of the model tank.
+		"heightOffset": 4.0
+	},
+	
+	// Постоянное стартовое значение кратности снайперского прицела.
+	// Constant starting value of sniper scope multiplicity.
+	"defaultZoom": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Постоянное значение кратности при входе в снайперский прицел.
+		// Constant value of multiplicity when entering the the sniper scope.
+		"defaultZoomValue": 4
+	},
+	
+	// Ангарная часть мода.
+	// Hangar part of the mod.
+	"hangar": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Снятие и одевание сменного оборудования в 1 нажатие кнопки.
+		// Removing and attaching replaceable equipment in 1 click.
+		"autoEquip": {
+			
+			// true - включить функцию.
+			// true - enable function.			
+			"enable": false,
+			
+			// Кнопка при нажатии которой срабатывает функция.
+			// Button by which pressing function is activated.
+			"equipKey": "F3",
+			
+			// Приоритет сменного оборудования.
+			// telescope - стереотруба, mesh - маск. сеть, toolbox - ящик с инструментами
+			// Priority replaceable equipment.
+			"equipPriority": ["telescope", "mesh", "toolbox"]
+		},
+		
+		// Фильтр сообщений в ангаре
+		// Hangar messeges filter
+		"messagesCleaner": {
+			
+			// true - включить функцию.
+			// true - enable function.	
+			"enable": true,
+			
+			// Всплывающие сообщения в ангаре.
+			// Pop-up messages in the hangar.
+			"popUpMessages": true,
+			
+			// Сообщения в системном канале.
+			// Messages in the system channel.
+			"systemLog": true,
+			
+			// Список масок по которым удаляются сообщения.
+			// List of masks which deleted messages.
+			"mask": ["Вы не меняли пароль", "Добро пожаловать на сервер", "Ремонт", "Куплено"]
+		}
+	},
+	
+	// Поведение горизонтальной стабилизации.
+	// Behavior of horizontal stabilization.
+	"horizontalStabilizer": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Тип горизонтальной стабилизации.
+		// disable - выключена на всей технике, full - включена на всей технике.
+		// Type of horizontal stabilization.
+		// disable - off on the whole technique, full - included on all vehicles.
+		"horizontalStabilizerType": "full"
+	},
+	
+	// Окно входа в игру.
+	// Login screen.
+	"loginWindow": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Автоматический вход при запуске игры.
+		// Automatic login on startup of the game.
+		"autoLogin": true,	
+
+		// Отключение автовыбора сервера в окне логина.
+		// Disable server auto-select in the login window.
+		"saveServer": true,
+		
+		// Отключение проигрывания стартового ролика.
+		// Deactivating the ingame start video.
+		"skipVideo": true
+	},
+	
+	// Отключение затемнения и озеленения в снайперском прицела.
+	// Disabling dimming and greening in sniper scope.
+	"noBinoculars": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false
+	},
+	
+	// Покачивания прицела и камеры (Динамическая камера).
+	// Wiggle sight and cameras (Dynamic camera).
+	"noDynamic": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Тип изменения динамической камеры.
+		// full - покачивание отключено полностью.
+		// custom - отключено только покачивание прицела.
+		// Type of change dynamic camera.
+		// full - off swinging completely.
+		// custom - just off wiggle sight.
+		"noDynamicType": "full"
+	},
+	
+	// Отмена смены режимов камеры по скроллу.
+	// Cancel change camera modes by scrolling.
+	"noScroll": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true
+	},
+	
+	// Отдаление камеры при старте боя и после уничтожения танка.
+	// Distancing camera at start of battle and after destroying the tank.
+	"onStartDeadDistance": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Отдаление камеры при входе в бой.
+		// минимальное - 1, максимальное - 400, стандартное - 2.
+		// Distancing camera when entering the the fight.
+		// minimum - 1, maximum - 400, standard - 2.
+		"startDistance": 11,
+		
+		// Отдаление камеры после уничтожения танка.
+		// минимальное - 1, максимальное - 400, стандартное - 15.
+		// Distancing camera after destroying the tank.
+		// minimum - 1, maximum - 400, standard - 15.
+		"deadDistance": 15
+	},
+	
+	// Прокрутка в аркадном режиме.
+	// Scroll in arcade mode.
+	"scrollSensitivity": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Чувствительность прокрутки в аркадном режиме.
+		// Scroll sensitivity in arcade mode.
+		"arcadeScroll": 5
+	},
+	
+	// Сессионная статистика *Большинство настроек находятся в файле скина
+	// Session statistic *Most of the settings are in the skin file
+	"sessionStatistic": {
+
+		// true - включить функцию.
+		// true - enable function.
+		"enable": true,
+		
+		// Автоматически обнулять статистику по истечению срока годности.
+		// Automatically reset the statistics after the expiration date.
+		"autoReset": true,
+		
+		// Количество дней на протяжении которых хранится статистика.
+		// The number of days during which the stored statistics.
+		"daysToBeSaved": 1,
+
+		// Время когда статистика обнуляется (от 0 до 23)
+		// Time when statistics are reset (from 0 to 23)
+		"hourOffset": 4,
+		
+		// true - Обрабатывать бои которые идут в основную статистику
+		// false - Обрабатывать все бои без исключений		
+		// true - Process battles that go to general statistics
+		// false - Process all battles without exception
+		"processOnlyStatBattles": true,
+		
+		// Кнопка перезагрузки конфига
+		// Config reload Button
+		"debugButton": {
+			"enable": false,
+			"label": "Перезагрузка конфига",
+			"type": "black",
+			"width": 220
+		}
+	},
+
+	// Обработка сообщений в системном канале *Большинство настроек находятся в файле скина
+	// Process messages in the system channel *Most of the settings are in the skin file
+	"systemMessages": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true
+	},
+	
+	// Ручной тормоз на ПТ-САУ.
+	// Handbrake on Tank Destroyers.
+	"TDBrakeRemover": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+		
+		// Тип отключения ручного тормоз на ПТ-САУ.
+		// full - полное отключение тормоза, custom - только открепление камеры.
+		// Type of deactivating of manual brake on Tank Destroyers.
+		// full - completely off the brake, custom - just detach the camera.
+		"TDSniperMovementMode": "custom"
+	},
+	
+	// Свободная камера.
+	// Free camera.
+	"videomode": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+			
+		// Кнопка при нажатии которой активируется камера.
+		// Button by which pressing the camera is activated.
+		"activateKey": "F3",
+		
+		// Горячие клавиши для разных манипуляций с камерой.
+		// Hotkeys for different manipulations with the camera.
+		"binds": {
+			"bindToVehicle": "B",
+			"showGunMarker": "N",
+			"showMarkers": "H",
+			"setDefaultRoll": "R",
+			"switchInertia": "P",
+			"switchLandCamera": "L",
+			"switchRotateAroundPoint": "C",
+			"setDefaultFov": "F"
+		}
+	},
+	
+	// Отдаление  камеры в бою.
+	// Distancing camera in battle.
+	"zoomDistance": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Отдаление в аркадном режиме.
+		// минимальное - 1, максимальное - 400, стандартное - 2 25.
+		// Distancing in arcade mode.
+		// minimum - 1, maximum - 400, standard - 2 25.
+		"arcadeDistance": [11, 75],
+		
+		// Отдаление в артиллерийском режиме.
+		// минимальное - 1, максимальное - 400, стандартное - 40 100.
+		// Distancing in strategic mode.
+		// minimum - 1, maximum - 400, standard - 40 100.
+		"artilleryDistance": [10, 200]
+	},
+	
+	// Количество шагов в снайперском прицеле и ихняя кратность.
+	// The number of steps in the sniper scope and multiplicity of theirs.
+	"zoomX": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": true,
+		
+		// Список значений кратности снайперского режима.
+		// минимальное значение - 0.8, максимальное значение - 60, максимальное количество шагов - 20
+		// List of multiplicity sniper mode.
+		// minimum value - 0.8, maximum value - 60, maximum number of steps - 20.
+		"zoomXSteps": [4, 8]
+	},
+	
+	// Зум индикатор.
+	// Zoom indicator.
+	"zoomIndicator": {
+		
+		// true - включить модуль.
+		// true - enable the module.
+		"enable": false,
+
+		// Позиция индикатора на экране.
+		// Перевернутая по высоте декартовая система координат в пикселях, с отчетом, от центра экрана.
+		// Indicator position on the screen.
+		// Inverted adjustment cartesian coordinate system in pixels, with a report from the center of the screen.
+		"position": [250, 0],
+		
+		// Цвет надписи индикатора.
+		// Значение цвета либо в палитре RGBA (красный, зелёный, синий, прозрачность)
+		// либо заранее предусмотренный цвет: red, green, blue, gray, black, white, yellow, magenta
+		// Display color of the indicator.
+		// Importance color in a RGBA palette (red, green, blue, transparency)
+		// or advance provided color: red, green, blue, gray, black, white, yellow, magenta
+		"color": [123, 255, 35, 255],
+		
+		// Текст надписи индикатора.
+		// Вместо {{zoom}} будет подставлено текущее значение кратности.
+		// Label text indicator.
+		// Instead of {{zoom}} will be inserted the current value of multiplicity.
+		"message": "x{{zoom}}",
+		
+		// Тень от надписи индикатора.
+		// минимальное значение - 0, максимальное значение - 100, стандартное значение - 55.
+		// Shadow of the label of the indicator.
+		// minimum value - 0, the maximum value - 100, default value - 5.
+		"shadow": 60,
+		
+		// Размер шрифта надписи индикатора.
+		// small - Arial 11, medium - Verdana 15, large - Verdana 20.
+		// Font size inscriptions indicator.
+		// small - Arial 11, medium - Verdana 15, large - Verdana 20.
+		"fontSize": "large",
+		
+		// Отображение в реплеях
+		// Display in replays
+		"enableInBattleReplay": false
+	}
+}
