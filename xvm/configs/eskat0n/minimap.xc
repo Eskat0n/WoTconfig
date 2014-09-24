@@ -27,7 +27,7 @@
       "pixelsBack": 160,
       // false - does not set zoomed minimap at display center.
       // false - не устанавливать увеличенную миникарту по центру экрана.
-      "centered": false
+      "centered": true
     },
     // Minimap labels.
     // Надписи на миникарте.

@@ -1,0 +1,92 @@
+"systemMessages": {
+
+		"battleResults": {
+			"winPattern": {
+				"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:rating}}<br>{{UM:damage}}{{UM:stat}}{{UM:xp}}{{UM:credits}}{{UM:achieve}}",
+				// Фон
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultWin.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+
+				"noBattleData": {
+					"message": "{{UM:win}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achieve}}",
+					// Фон
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultWin.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+
+			"defeatPattern": {
+				"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:rating}}<br>{{UM:damage}}{{UM:stat}}{{UM:xp}}{{UM:credits}}{{UM:achieve}}",
+				// Фон
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDefeat.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+
+				"noBattleData": {
+					"message": "{{UM:defeat}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achieve}}",
+					// Фон
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDefeat.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+
+			"drawPattern": {
+				"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:rating}}<br>{{UM:damage}}{{UM:stat}}{{UM:xp}}{{UM:credits}}{{UM:achieve}}",
+				// Фон
+				"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDraw.png",
+				"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png",
+
+				"noBattleData": {
+					"message": "{{UM:draw}}{{UM:map}}{{UM:vehicle}}{{UM:xp2}}{{UM:credits2}}{{UM:achieve}}",
+					// Фон
+					"bgImage": "../../scripts/client/mods/PMOD/skins/Armagomen/images/battleResultDraw.png",
+					"icon": "../../scripts/client/mods/PMOD/skins/Armagomen/images/BattleResult.png"
+				}
+			},
+			
+			"macrosFormatter": {
+				"dailyXPFactor": "<font color='#D3D3D3' size='12'>(x{{val}})</font>",
+				"creditsPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+				"creditsCompensation": "компенсация за урон от союзников: <font color='#D3D3D3'>{{val}}</font>",			
+				"xpPenalty": "штраф за нанесение урона союзникам: <font color='#D3D3D3'>{{val}}</font>",
+				"damageRating": "<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/marks.png' width='31' height='14' vspace='-2' /><font size='15'><b>{{val}}%</b></font>",
+				"achievements": {
+					"pattern": "  • {{localName}}",
+					"separator": "<br>",
+					"result": "<br><br><font color='#B2B2B2'>Награды и Достижения:</font><br><font color='#D5C100' size='13'>{{pattern}}</font>"
+				}
+			},
+
+			"buttons": {
+				"label": "Подробные результаты боя",
+				"type": "black",
+				"width": 222
+		},
+		
+		"userMacros": {
+			"UM:win":		"<font color='#46B700' size='18'>Победа!</font><br>",
+			"UM:defeat":	"<font color='#C40900' size='18'>Поражение</font><br>",
+			"UM:draw":		"<font color='#D86704' size='18'>Ничья</font><br>",
+			"UM:map":		"<font color='#C0C0C0'>Карта: </font><font color='#5A91D2' size='15'><b>{{Map}}</b></font><br>",
+			"UM:vehicle":	"<font color='#C0C0C0'>Техника: </font><font color='#5A91D2' size='15'><b>{{VehicleLocalNameShort}}</b></font>",
+			"UM:achieve":	"{{Achievements}}",
+			// нет данных о бое
+			"UM:xp2":		"<br><font color='#C0C0C0'>Итого: </font><font color='{{c:XP}}' size='15'><b>{{XP}}</b></font>{{DailyXPFactor}}<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' />",
+			"UM:credits2":	"<font color='#93EF71' size='15'><b> {{Credits}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/credits.png' width='16' height='14' vspace='-1' />",
+			// есть данные о бое
+			"UM:xp":		"<font color='#C0C0C0'>Итого: </font><font color='{{c:XP}}' size='15'><b>{{XP}}</b></font>{{DailyXPFactor}}<img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/exp.png' width='14' height='14' vspace='-3' /> <font size='15' color='#FE7903'><b>{{FreeXP}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/freexp.png' width='14' height='14' vspace='-3' />",
+			"UM:credits":	"<font color='{{c:PureCredits}}' size='15'><b> {{PureCredits}}</b></font><img src='img://scripts/client/mods/PMOD/skins/Armagomen/images/credits.png' width='16' height='14' vspace='-1' />",
+			"UM:rating":	"<font color='{{c:DamageRating}}'>{{DamageRating}}</font>",
+			"UM:stat":		"<textformat tabstops='[85]'><font color='#C0C0C0'>WN8: </font><font color='{{c:WN8}}' size='15'><b>{{WN8}}</b></font><tab><font color='#C0C0C0'>EFF: </font><font color='{{c:EFF}}' size='15'><b>{{EFF}}</b></font></textformat><br>",
+			"UM:damage":	"<textformat tabstops='[85]'><font color='#C0C0C0'>Урон: </font><font color='{{c:DamageDealt}}' size='15'><b>{{DamageDealt}}</b></font><tab><font color='#C0C0C0'>Засвет: </font><font color='#D3D3D3' size='15'><b>{{DamageAssisted}}</b></font></textformat><br>"
+			},
+		
+		"colors": {	
+			"XP": 					[{"value": 200,  "color": "#FE0E00"}, {"value": 400,  "color": "#FE7903"}, {"value": 800, "color": "#F8F400"}, {"value": 1200, "color": "#60FF00"}, {"value": 2000, "color": "#02C9B3"}, {"value": 99999, "color": "#D042F3"}],
+			"DamageDealt":			[{"value": 500,  "color": "#FE0E00"}, {"value": 1000, "color": "#FE7903"}, {"value": 1800, "color": "#F8F400"}, {"value": 2500, "color": "#60FF00"}, {"value": 3000, "color": "#02C9B3"}, {"value": 99999,  "color": "#D042F3"}],
+			"DamageRating":			[{"value": 65,	 "color": "#F8F400"}, {"value": 85,   "color": "#60FF00"}, {"value": 95,   "color": "#02C9B3"}, {"value": 101,  "color": "#D042F3"}],
+			"PureCredits":			[{"value": 0,	 "color": "#FF5D23"}, {"value": 9999999, "color": "#93EF71"}],
+			"EFF":					[{"value": 610,  "color": "#FE0E00"}, {"value": 850,  "color": "#FE7903"}, {"value": 1145, "color": "#F8F400"}, {"value": 1475, "color": "#60FF00"}, {"value": 1775, "color": "#02C9B3"}, {"value": 99999,  "color": "#D042F3"}],
+			"WN8":					[{"value": 315,  "color": "#FE0E00"}, {"value": 760,  "color": "#FE7903"}, {"value": 1325, "color": "#F8F400"}, {"value": 1980, "color": "#60FF00"}, {"value": 2570, "color": "#02C9B3"}, {"value": 99999,  "color": "#D042F3"}]
+			}
+	}
+}

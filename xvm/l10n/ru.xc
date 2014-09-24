@@ -6,9 +6,6 @@
     // Ping
     "Initialization": "Инициализация",
 
-    // BattleLoading
-    "New version available": "Доступна новая версия",
-
     // Win chance
     "Chance error": "Ошибка расчета шансов",
     "Chance to win": "Шансы на победу",
@@ -18,10 +15,12 @@
     "chanceBattleTier": "Уровень боя",
 
     // Hitlog
-    "attack": "атака",
+    "shot": "атака",
     "fire": "пожар",
     "ramming": "таран",
     "world_collision": "падение",
+    "death_zone": "death zone",
+    "drowning": "drowning",
     "Hits": "Пробитий",
     "Total": "Всего",
     "Last": "Последний",
@@ -40,6 +39,7 @@
     // BattleResults
     "Hit percent": "Процент попаданий",
     "Damage (assisted / own)": "Урон (с вашей помощью / свой)",
+    "BR_xpCrew": "экипажу",
 
     // TeamRenderers
     "Friend": "Друг",
@@ -57,6 +57,7 @@
     "WN6": "WN6",
     "WN8": "WN8",
     "EFF": "РЭ",
+    "WGR": "ЛРИ",
     "updated": "обновлено",
     " to ": " до ",
     "avg": "ср.",
@@ -89,6 +90,8 @@
     "PutOwnCrew": "Родной экипаж",
     "PutBestCrew": "Лучший экипаж",
     "PutClassCrew": "Экипаж того же класса",
+    "PutPreviousCrew": "Предыдущий экипаж",
+    "DropAllCrew": "Высадить весь экипаж",
 
     // Vehicle Params
     "gun_reload_time/actual": "Расчетное время перезарядки орудия",
@@ -122,6 +125,11 @@
     // VehicleMarkersManager
     "blownUp": "Взрыв БК!",
 
+    // Check version
+    "ver/currentVersion": "XVM {0} #{1}", // XVM 5.3.4 #4321
+    "ver/newVersion": "Доступно обновление:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
+    "websock/not_connected": "<font color='#FFFF00'>нет подключения к серверу XVM</font>",
+
     //Token
     "token/network_error": "Ошибка сети.\nСтатистика XVM недоступна, попробуйте позже.",
     "token/bad_token": "Неверный токен.\n{{l10n:token/notify_xvm_site}}",
@@ -132,6 +140,11 @@
     "token/time_left_warn": "Осталось:<tab/><font color='#EEEE00'>{0}д. {1}ч. {2}м.</font>",
     "token/cnt": "Количество запросов:<tab/><font color='#EEEEEE'>{0}</font>",
     "token/unknown_status": "Неизвестный статус",
-    "token/notify_xvm_site": "Пожалуйста, перейдите на <a href='#XVM_SITE#'>сайт XVM</a> и активируйте статистику в личном кабинете."
+    "token/notify_xvm_site": "Пожалуйста, перейдите на <a href='#XVM_SITE#'>сайт XVM</a> и активируйте статистику в личном кабинете.",
+
+    //Vehicle status
+    "Destroyed": "Уничтожен",
+    "No data": "Нет данных",
+    "Not ready": "Не готов"
   }
 }

@@ -30,7 +30,7 @@
         "view": [
             // Main circles:
             // Основные круги:
-            { "enabled":  false, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x3EB5F1" },
+            { "enabled":  true, "distance": "blindarea", "scale": 1, "thickness": 0.75, "alpha": 80, "color": "0x3EB5F1" },
             { "enabled":  true, "distance": 445,         "scale": 1, "thickness":  1.1, "alpha": 45, "color": "0xFFCC66" },
             // Additional circles:
             // Дополнительные круги:

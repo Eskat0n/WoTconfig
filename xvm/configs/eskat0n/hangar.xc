@@ -4,15 +4,9 @@
  */
 {
   "hangar": {
-    // true - Disable display of tutorial icon
-    // true - скрыть иконку обучения
-    "hideTutorial": false,
     // true - Show XWN8 instead of XEFF in company windows
     // true - показывать XWN8 вместо XEFF в окнах рот
     "xwnInCompany": true,
-    // true - Show mastery mark in tank carousel
-    // true - Показывать знак мастерства в карусели танков
-    "masteryMarkInTankCarousel": true,
     // true - Show mastery mark in tech tree
     // true - Показывать знак мастерства в дереве исследований
     "masteryMarkInTechTree": true,
@@ -33,8 +27,8 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 170,
-      "y": 35,
+      "x": 5,
+      "y": 51,
       // Transparency
       // Прозрачность от 0 до 100
       "alpha": 80,
@@ -43,7 +37,7 @@
       "delimiter": ": ",
       // Maximum number of column rows
       // Максимальное количество строк одной колонки
-      "maxRows": 4,
+      "maxRows": 2,
       // Gap between columns
       // Пространство между колонками
       "columnGap": 10,
@@ -90,6 +84,10 @@
         "blur": 4,
         "strength": 2
       }
-    }
+    },
+    // Parameters for tank carousel
+    // Параметры карусели танков
+    "carousel": ${"carousel.xc":"carousel"},
+    "clock": ${"clock.xc":"clock"}
   }
 }
