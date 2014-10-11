@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "初期化中",
-    "New version available": "新しいバージョンがあります",
     "Chance error": "誤差",
     "Chance to win": "勝利予想",
     "chanceLive": "Live",
     "chanceBattleTier": "戦闘Tier",
-    "attack": "攻撃",
     "fire": "火災",
     "ramming": "体当たり",
     "world_collision": "落下",
@@ -77,10 +75,6 @@
     "token/bad_token": "不正なトークン\n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "ステータス: <font color='#FF0000'>ブロック</font><br>{{l10n:token/notify_xvm_site}}",
     "token/inactive": "ステータス: <font color='#FFFF00'>Inactive</font><br>{{l10n:token/notify_xvm_site}}",
-    "token/unknown_status": "未知のステータス",
-    "": "naokii",
-    "": "ステータス: <font color='#00FF00'>Active</font>",
-    "": "残り <font color='#eeeeee'>{0}</font>日",
-    "": "残り <font color='#eeeeee'>{0}</font>時間"
+    "token/unknown_status": "未知のステータス"
   }
 }

@@ -18,7 +18,7 @@
 		"pathNullBattles": "../maps/icons/library/PersonalAchievementsIcon-1.png"
 	},
 	"resetButton": {
-		"enable": false,
+		"enable": true,
 		"label": "Сброс",
 		"type": "black",
 		"width": 222

@@ -21,6 +21,7 @@
     "world_collision": "падение",
     "death_zone": "death zone",
     "drowning": "drowning",
+
     "Hits": "Пробитий",
     "Total": "Всего",
     "Last": "Последний",
@@ -126,11 +127,12 @@
     "blownUp": "Взрыв БК!",
 
     // Check version
-    "ver/currentVersion": "XVM {0} #{1}", // XVM 5.3.4 #4321
+    // XVM 5.3.4 (4321)
+    "ver/currentVersion": "XVM {0} ({1})",
     "ver/newVersion": "Доступно обновление:<tab/><a href='#XVM_SITE_DL#'><font color='#00FF00'>v{0}</font></a>\n{1}",
     "websock/not_connected": "<font color='#FFFF00'>нет подключения к серверу XVM</font>",
 
-    //Token
+    // Token
     "token/network_error": "Ошибка сети.\nСтатистика XVM недоступна, попробуйте позже.",
     "token/bad_token": "Неверный токен.\n{{l10n:token/notify_xvm_site}}",
     "token/blocked": "Статус: <font color='#FF0000'>Заблокирован</font>\n{{l10n:token/notify_xvm_site}}",
@@ -142,7 +144,14 @@
     "token/unknown_status": "Неизвестный статус",
     "token/notify_xvm_site": "Пожалуйста, перейдите на <a href='#XVM_SITE#'>сайт XVM</a> и активируйте статистику в личном кабинете.",
 
-    //Vehicle status
+    // Comments
+    "Group": "Группа",
+    "Add group": "Добавить группу",
+    "Edit group": "Изменить группу",
+    "Add comment": "Добавить комментарий",
+    "Edit comment": "Изменить комментарий",
+
+    // Vehicle status
     "Destroyed": "Уничтожен",
     "No data": "Нет данных",
     "Not ready": "Не готов"

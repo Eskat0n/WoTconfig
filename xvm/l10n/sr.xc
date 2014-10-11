@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Pokretanje",
-    "New version available": "Nova verzija je raspoloživa",
     "Chance error": "Šansa greške",
     "Chance to win": "Šansa za pobedu",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "Napad",
     "fire": "Požar",
     "ramming": "Sudar",
     "world_collision": "Pad",
@@ -60,7 +58,6 @@
     "LT": "Laki",
     "TD": "Destrojeri",
     "SPG": "Artiljerija",
-    "blownUp": "Eksplodirao",
-    "": "Tixar, Tekija (EU)"
+    "blownUp": "Eksplodirao"
   }
 }

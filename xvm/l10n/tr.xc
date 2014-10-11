@@ -1,10 +1,8 @@
 {
   "locale": {
     "Initialization": "Initialization",
-    "New version available": "New version available",
     "Chance error": "Şans hata",
     "Chance to win": "Kazanma şansı",
-    "attack": "saldır",
     "fire": "ateş",
     "ramming": "çarpma",
     "world_collision": "düşme",
@@ -49,7 +47,6 @@
     "LT": "HT",
     "TD": "TA",
     "SPG": "KMT",
-    "blownUp": "Patladı!",
-    "": "Ferhat 'Fornicras' Pınar/EU"
+    "blownUp": "Patladı!"
   }
 }

@@ -49,6 +49,13 @@
       "alwaysShowFilters": true,
       //"hideBuyTank": true,
       //"hideBuySlot": true,
+      "filters": {
+        //"nation":   { "enabled": false },
+        //"type":     { "enabled": false },
+        //"level":    { "enabled": false },
+        //"prefs":    { "enabled": false },
+        //"favorite": { "enabled": false }
+      },
       "fields": {
         "tankType": { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
         "level":    { "visible": true, "dx": 0, "dy": 0, "alpha": 100, "scale": 1 },
@@ -62,14 +69,16 @@
         { "x": 22, "y": 12, "format": "<font color='{{v.c_winrate}}'>{{v.winrate%d~%}}</font>", "shadow": {} },
         { "x": 0, "y": 28, "format": "<font color='{{v.c_wn8effd}}'>{{v.wn8effd%0.2f}}</font>", "shadow": {} },
         { "x": 0, "y": 42, "format": "<font color='{{v.c_battles}}'>{{v.battles}}</font>", "shadow": {} },
-        //{ "x": 0, "y": 54, "format": "<font color='{{v.c_type}}'>{{v.premium?1|0}}</font>", "shadow": {} },
-        //{ "x": -1, "y": 54, "format": "<img src='xvm://res/icons/xvm/16x16.png' width='16' height='16'>" },
+        { "x": 0, "y": 54, "format": "<font color='{{v.c_damageRating}}'>{{v.damageRating~%}}</font>", "shadow": {} },
+        //{ "x": 60, "y": 12, "format": "<font color='{{v.c_type}}'>{{v.premium?1|0}}</font>", "shadow": {} },
+        //{ "x": 60, "src": "xvm://res/contour/HARDicons/{{v.sysname}}.png" },
         {}
       ]
     },
     "clock": {
       //"x": 100,
-      //"y": 5
+      //"y": 5,
+      //"format": "<font face='$FieldFont'><font size='26'> {{H}}:{{m%02d}} {{AM?a.m.|p.m.}}</font></font>"
     }
   },
   "userInfo": {
@@ -91,7 +100,7 @@
     "showPostmortemTips": false,
     "highlightVehicleIcon": false,
     "allowHpInPanelsAndMinimap": true,
-    "allowGunMarksInPanelsAndMinimap": true,
+    "allowMarksOnGunInPanelsAndMinimap": true,
     "clanIconsFolder": "clanicons",
     "elements": ${"elements"}
   },
@@ -199,7 +208,7 @@
   },
   "texts": {
     //"vtype": { "LT":  "ЛТ" },
-    "gunMarks": { "_0": "", "_1": "|", "_2": "||", "_3": "|||" }
+    "marksOnGun": { "_0": "", "_1": "|", "_2": "||", "_3": "|||" }
   },
   "colors": {
     "system": {

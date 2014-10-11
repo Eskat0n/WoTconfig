@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Color settings.
  * Настройки цветов.
  */
@@ -339,6 +339,27 @@
       { "value": 1.3,  "color": ${"def.colorRating.good"     } },
       { "value": 2.0,  "color": ${"def.colorRating.very_good"} },
       { "value": 15,   "color": ${"def.colorRating.unique"   } }
+    ],
+    // Dynamic color by damage rating (percents for marks on gun)
+    // Динамический цвет по рейтингу урона (процент для отметок на стволе)
+    "damageRating": [
+      { "value": 20,    "color": ${"def.colorRating.very_bad" } },  // 20% of players
+      { "value": 60,    "color": ${"def.colorRating.bad"      } },  // better then 20% of players
+      { "value": 90,    "color": ${"def.colorRating.normal"   } },  // better then 60% of players
+      { "value": 99,    "color": ${"def.colorRating.good"     } },  // better then 90% of players
+      { "value": 99.9,  "color": ${"def.colorRating.very_good"} },  // better then 99% of players
+      { "value": 101,   "color": ${"def.colorRating.unique"   } }   // better then 99.9% of players
+    ],
+    // TODO:values
+    // Dynamic color by hit ratio (percents of hits)
+    // Динамический цвет по проценту попаданий
+    "hitsRatio": [
+      { "value": 20,    "color": ${"def.colorRating.very_bad" } },
+      { "value": 60,    "color": ${"def.colorRating.bad"      } },
+      { "value": 90,    "color": ${"def.colorRating.normal"   } },
+      { "value": 99,    "color": ${"def.colorRating.good"     } },
+      { "value": 99.9,  "color": ${"def.colorRating.very_good"} },
+      { "value": 101,   "color": ${"def.colorRating.unique"   } }
     ]
   }
 }

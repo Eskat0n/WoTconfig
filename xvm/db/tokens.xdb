@@ -1,1 +1,1 @@
-{"40245": {"status": "active", "cnt": 1, "start_at": 1410190424938, "issued": 2, "expires_at": 1412609759980, "token": "b04e448c-9075-40c9-a4ad-ae08a187f3e7", "_id": 40245}, "lastPlayerId": 40245}
+{"40245": {"status": "active", "cnt": 255, "start_at": 1410190424938, "issued": 3, "expires_at": 1413819894898, "token": "b04e448c-9075-40c9-a4ad-ae08a187f3e7", "verChkCnt": 9, "_id": 40245}, "lastPlayerId": 40245}

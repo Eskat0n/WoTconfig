@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Käivitumine",
-    "New version available": "Uus versioon saadaval",
     "Chance error": "Tõenäosuse viga",
     "Chance to win": "Võidu tõenäosus",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "mürsk",
     "fire": "tuli",
     "ramming": "rammimine",
     "world_collision": "kukkumine",
@@ -81,7 +79,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Plahvatas!",
-    "": "jyrka98, Mikk Kiilaspää"
+    "blownUp": "Plahvatas!"
   }
 }

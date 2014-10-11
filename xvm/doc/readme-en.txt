@@ -30,9 +30,6 @@
   Support:       http://www.koreanrandom.com/forum/topic/1383-xvm
   FAQ:           http://www.modxvm.com/en/faq/
   User configs:  http://www.koreanrandom.com/forum/forum/50-custom-configurations
-  Сonfig editor: http://www.koreanrandom.com/forum/topic/1422-/#entry11316
-
-
 
 -----------------------------------------------------------
 2. INSTALL
@@ -49,7 +46,6 @@
 
     All possible config options you can see in
       \res_mods\xvm\configs\@Default\
-    Or use online editor: http://www.koreanrandom.com/forum/topic/1422-/#entry11316
 
     Note: If you want to change the config manually, use Notepad, DO NOT use MS Word,
     WordPad and such editors.
@@ -78,8 +74,6 @@
   Mod config files:
     \res_mods\xvm\configs\@Default\
   You can select ready config file from \res_mods\xvm\configs\user configs\ directory
-  You can create new config or edit existing using online editor:
-    http://www.koreanrandom.com/forum/topic/1422-/#entry11316
 
   All possible config options you can see in this file:
     \res_mods\xvm\configs\@Default\
@@ -87,6 +81,8 @@
 
   Supported HTML tags:
     http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#htmlText
+
+  WARNING: Macros in this file is not actual, see macros.txt and macros-hangar.txt for actual macros
 
   Macros available:
     In players panel, battle loading screen, statistic form and vehicle markers:

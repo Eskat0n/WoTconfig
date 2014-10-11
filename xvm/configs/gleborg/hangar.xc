@@ -1,4 +1,4 @@
-﻿/**
+﻿/** 
  * Parameters for hangar
  * Параметры ангара
  */
@@ -27,7 +27,7 @@
       "updateInterval": 10000,
       // Axis field coordinates
       // Положение поля по осям
-      "x": 5,
+      "x": 3,
       "y": 51,
       // Transparency
       // Прозрачность от 0 до 100
@@ -40,7 +40,7 @@
       "maxRows": 2,
       // Gap between columns
       // Пространство между колонками
-      "columnGap": 10,
+      "columnGap": 3,
       // Text style
       // Стиль текста
       "fontStyle": {
@@ -88,6 +88,11 @@
     // Parameters for tank carousel
     // Параметры карусели танков
     "carousel": ${"carousel.xc":"carousel"},
-    "clock": ${"clock.xc":"clock"}
+    // Parameters for hangar clock
+    // Параметры часов в ангаре
+    "clock": ${"clock.xc":"clock"},
+    // Parameters for comments for players
+    // Параметры для комментариев для игроков
+    "comments": ${"comments.xc":"comments"}
   }
 }

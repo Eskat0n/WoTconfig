@@ -1,12 +1,10 @@
 {
   "locale": {
     "Initialization": "Initialiseren",
-    "New version available": "Nieuwe versie beschikbaar",
     "Chance error": "Fout kans",
     "Chance to win": "Win kans",
     "chanceLive": "Live",
     "chanceBattleTier": "T",
-    "attack": "aanval",
     "fire": "vuur",
     "ramming": "rammen",
     "world_collision": "beschadigd",
@@ -63,7 +61,6 @@
     "LT": "LT",
     "TD": "TD",
     "SPG": "SPG",
-    "blownUp": "Opgeblazen!",
-    "": "Ruud Bremer"
+    "blownUp": "Opgeblazen!"
   }
 }
